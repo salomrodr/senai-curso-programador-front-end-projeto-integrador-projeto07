@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<script src="./js/script.js"></script>
+
+	<title>Conversor de Moedas</title>
+
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+
+        <!-- Início: div-mestre -->
+        <div class="div-mestre">
+
+            <!-- Início: div-cabecalho-barra -->
+            <div class="div-cabecalho-barra">
+            </div>
+            <!-- Fim: div-cabecalho-barra -->
+
+            <!-- Início: Cabeçalho em main -->
+            <div class="div-cabecalho">
+                <a href="https://www.linkedin.com/in/salomrodr" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/salomrodr" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://discord.com/channels/@salomrodr" target="_blank"><i class="fab fa-discord"></i></a>
+				<a href="mailto:scrisrjbr@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                <a href="https://www.instagram.com/salomrodr" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.facebook.com/salomrodr" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://twitter.com/salomrodr" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://wa.me/+5521973867527" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <!-- Fim: Cabeçalho em main -->
+
+            <!-- Início: div-cabecalho-barra -->
+            <div class="div-cabecalho-barra">
+            </div>
+            <!-- Fim: div-cabecalho-barra -->
+
+            <!-- Início: Corpo em main -->
+            <div class="div-corpo">
+
+                <!-- Início: Título -->
+                <div class="div-titulo">
+                    <h2>Conversor de Moedas</h2>
+                </div>
+                <!-- Fim: Título -->
+
+                <!-- Início: Temperatura -->
+                <div class="div-imput-temperatura">
+                    <div class="div-esquerda-imput-temperatura">
+                        <label for="valor">Digite o valor (R$):</label>
+                    </div>
+                    <div class="div-direita-imput-temperatura">
+                        <input type="number" id="valor">
+                    </div>
+                </div>
+                <!-- Fim: Temperatura -->
+
+                <!-- Início: Escala -->
+                <div class="div-imput-escala">
+
+                    <div class="div-esquerda-imput-escala">
+                        <label for="moeda">Escolha a Moeda:</label>
+                    </div>
+                    <div class="div-direita-imput-escala">
+                        <select id="moeda">
+                            <!-- <option value=""></option> -->
+                            <option value="USD">Dólar (USD)</option>
+			                <option value="EUR">Euro (EUR)</option>
+			                <option value="GBP">Libra Esterlina (GBP)</option>
+			                <option value="JPY">Iene (JPY)</option>
+			                <option value="ARS">Peso Argentino (ARS)</option>
+                        </select>
+                    </div>
+
+                </div>
+                <!-- Fim: Escala -->
+
+                <!-- Início: Botão -->
+                <div class="div-botao">
+                    <button onclick="convertmoeda()"><strong>Converter</strong></button>
+                </div>
+                <!-- Fim: Botão -->
+
+                <!-- Início: Resultado -->
+                <div class="div-resultado">
+
+                    <div class="div-esquerda-resultado-display">
+                    </div>
+
+                    <div class="div-centro-resultado-display">
+                        <span class="div-resultado-ponto">.</span>
+                        <span id="result"></span>
+                        <span class="div-resultado-ponto">.</span>
+                    </div>
+
+                    <div class="div-direita-resultado-display">
+                    </div>
+
+                </div>
+                <!-- Fim: Resultado -->
+
+                <!-- Início: div-resultado-barra -->
+                <div class="div-resultado-barra">
+                    API Pública "ExchanGerate"
+                </div>
+                <!-- Fim: div-resultado-barra -->
+
+            </div>
+            <!-- Fim: Corpo em main -->
+
+            <!-- Início: Rodapé em main -->
+            <div class="div-rodape1">
+                Desenvolvido por Salomão Rodrigues no Curso de Programador<br /> Front-End (SENAI), sob orientação do <a href="https://sammyfreitas.github.io/portfolioSite" target="_blank">Prof. Anthony Freitas</a>
+            </div>
+            <div class="div-rodape2">
+                Copyright © 2023 Dev Rodrigues | All Rights Reserved
+            </div>
+            <div class="div-rodape3">
+                <a href="https://wa.me/+5521973867527" target="_blank">WhatsApp: (21) 97386-7527</a>
+            </div>
+            <!-- Fim: Rodapé em main -->
+
+        </div>
+        <!-- Fim: div-mestre -->
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
